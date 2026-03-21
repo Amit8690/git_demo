@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form action="">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Amit Kumar Sharma" required >
+        <br>
+        <label for="emailAddress">Email Address</label>
+        <input type="email" id="emailAddress" placeholder="amit@gmail.com" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" >
+        <br>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword">
+        <br>
+        <label for="DOB">Date of Birth</label>
+        <input type="text" id="DOB" required pattern="^\d{4}-\d{2}-\d{2}$">
+        <br>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" required pattern="^(\+91[\-\s]?)?[0]?(6|7|8|9)\d{9}$">
+        <br>
+        <label for="creditCard">Credit Card Number</label>
+        <input type="text" id="creditCard" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9][0-9])[0-9]{12})$">
+        <br>
+        <label for="Username">Username</label>
+        <input type="text" id="Username" required pattern="^[A-Za-z][A-Za-z0-9]{4,19}$">
+        <br>
+        <label for="websiteUrl">Website</label>
+        <input type="text" id="websiteUrl" required pattern="^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$">
+        <br>
+        <button>Submit
+        </button>
+
+    </form>
+</body>
+</html>
+
+<!--Assignment: Building a User Registration Form
+
+Story: You are working as a web developer for an e-commerce company called "TechMart". TechMart is revamping its website and wants to enhance the user registration process. Your task is to create a user registration form that includes various input types and incorporates pattern matching to ensure data accuracy.
+
+Requirements:
+
+Create a user registration form with the following fields:
+
+Full Name (text input)
+Email Address (email input)
+Password (password input)
+Confirm Password (password input)
+Date of Birth (text input)
+Phone Number (text input)
+Credit Card Number (text input)
+Username (text input)
+Website URL (text input)
+Include proper labels and placeholders for each input field.(skipping for now)
+
+Ensure that all required fields are marked as mandatory.
+
+Implement pattern matching for the following fields to ensure data accuracy:
+
+Credit Card Number: Validate for a 16-digit number.
+Date of Birth: Validate for the YYYY-MM-DD format.
+Phone Number: Validate for a 10-digit Indian phone number.
+Website URL: Validate for a valid URL format.
+Username: Validate for alphanumeric characters only.
+Submission Guidelines:
+
+Create an HTML file named "registration_form.html" containing the user registration form.
