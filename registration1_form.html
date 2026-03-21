@@ -9,33 +9,34 @@
     <h1>User Registration Form</h1>
     <form action="">
         <label for="fullName">Full Name</label>
-        <input type="text" id="fullName" placeholder="Amit Kumar Sharma" required >
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required >
         <br>
         <label for="emailAddress">Email Address</label>
-        <input type="email" id="emailAddress" placeholder="amit@gmail.com" required>
+        <input type="email" name="emailAddress"
+        id="emailAddress" placeholder="amit@gmail.com" required>
         <br>
         <label for="password">Password</label>
-        <input type="password" id="password" >
+        <input type="password" name="password" id="password" >
         <br>
         <label for="confirmPassword">Confirm Password</label>
-        <input type="password" id="confirmPassword">
+        <input type="password" name="password" id="confirmPassword">
         <br>
         <label for="DOB">Date of Birth</label>
-        <input type="text" id="DOB" required pattern="^\d{4}-\d{2}-\d{2}$">
+        <input type="text" name="DOB"  id="DOB" required pattern="^\d{4}-\d{2}-\d{2}$">
         <br>
         <label for="phoneNumber">Phone Number</label>
-        <input type="text" id="phoneNumber" required pattern="^(\+91[\-\s]?)?[0]?(6|7|8|9)\d{9}$">
+        <input type="text" name="phoneNumber" id="phoneNumber" required pattern="^(\+91[\-\s]?)?[0]?(6|7|8|9)\d{9}$">
         <br>
         <label for="creditCard">Credit Card Number</label>
-        <input type="text" id="creditCard" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9][0-9])[0-9]{12})$">
+        <input type="text" name="creditCard" id="creditCard" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9][0-9])[0-9]{12})$">
         <br>
         <label for="Username">Username</label>
-        <input type="text" id="Username" required pattern="^[A-Za-z][A-Za-z0-9]{4,19}$">
+        <input type="text" name="Username" id="Username" required pattern="^[A-Za-z][A-Za-z0-9]{4,19}$">
         <br>
         <label for="websiteUrl">Website</label>
-        <input type="text" id="websiteUrl" required pattern="^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$">
+        <input type="text" name="websiteUrl"  id="websiteUrl" required pattern="^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$">
         <br>
-        <button>Submit
+        <button type="submit">Register
         </button>
 
     </form>
