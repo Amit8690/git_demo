@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced features</title>
+</head>
+<body>
+        <h1>User registration form</h1>
+        <br><br>
+        <form action="">
+            <fieldset>
+            <legend>Personal info</legend>
+        <label for="fullName">Full Name</label>
+        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required >
+        <br><br>
+        <label for="emailAddress">Email Address</label>
+        <input type="email" name="emailAddress"
+        id="emailAddress" placeholder="amit@gmail.com" required>
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" >
+        <br><br>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" name="password" id="confirmPassword">
+        <br><br>
+        <label for="DOB">Date of Birth</label>
+        <input type="text" name="DOB"  id="DOB" required pattern="^\d{4}-\d{2}-\d{2}$">
+        <br><br>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" name="phoneNumber" id="phoneNumber" required pattern="^(\+91[\-\s]?)?[0]?(6|7|8|9)\d{9}$">
+        <br><br>
+        <label for="creditCard">Credit Card Number</label>
+        <input type="text" name="creditCard" id="creditCard" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9][0-9])[0-9]{12})$">
+        <br><br>
+        <label for="Username">Username</label>
+        <input type="text" name="Username" id="Username" required pattern="^[A-Za-z][A-Za-z0-9]{4,19}$">
+        <br><br>
+        <label for="websiteUrl">Website</label>
+        <input type="text" name="websiteUrl"  id="websiteUrl" required pattern="^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$">
+        <br><br>
+        <label for="comment">Enter a message:</label> <br><br>
+        <textarea name="comment" id="comment" rows="3" cols="5" placeholder="Enter a comment"></textarea><br><br>
+        </fieldset>
+        <fieldset>
+        <legend>Preferred OTT subscriptions</legend>
+        <br><br>
+
+        <input type="radio" id="Netflix" name="subcriptions" value="Netflix">
+        <label for="Netflix">Netflix</label>
+        <br><br>
+        <input type="radio" id="prime" name="subcriptions" value="prime">
+        <label for="prime">Prime Videos</label>
+        <br><br>
+        <input type="radio" id="hotstar" name="subcriptions" value="hotstar" checked>
+        <label for="hotstar">Hotstar</label>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Country</legend>
+        <label for="country">Choose your country</label>
+        <select name="country" id="country">
+            <option value="India" selected>India</option>
+            <option value="America">America</option>
+            <option value="Italy">Italy</option>
+            <option value="Swiss">Swiss</option>
+            <option value="France">France</option>
+            <option value="Australia">Australia</option>
+            <option value="New Zealand">New Zealand</option>
+        </select>
+        </fieldset>
+        <button type="submit">Register
+        </button>
+
+    </form>
+    
+</body>
+</html>
